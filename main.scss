@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+ video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+.landing__overlay {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($color: #000000, $alpha: .65);
+  }
+
+.landing__header {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+
+    .landing__content {
+        border: 5px solid #2187B4;
+        margin-right: 10rem;
+        min-width: 500px;
+        min-height: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        .landing__btn {
+            text-decoration: none;
+            color: #fff;
+            padding: .55rem 4rem;
+            background-color: #2187B4;
+        }
+    }
+  }
+
+nav {
+      position: absolute;
+      bottom: 0;
+      width: 100vw;
+      display: flex;
+      justify-content: space-around;
+      background-color: rgba($color: #000000, $alpha: .65);
+      color: #fff;
+      height: 4vh;
+
+      ul {
+          list-style: none;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          width: 25%;
+      }
+
+      a {
+          color: #fff;
+          font-size: 1.45rem;
+          text-decoration: none;
+      }
+  }
+
+
+
+#music {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 10rem 0;
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .music__grid {
+        display: flex;
+        gap: 10px;
+    }
+
+    .music__grid img {
+        height: auto;
+        width: 350px;
+        position: relative;
+    }
+
+    .music__right {
+        margin-top: 2rem;
+    }
+
+    .album {
+        position: relative;
+    }
+
+    .album__overlay {
+        background-color: #2187B4;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        height: 99%;
+        transition: opacity 0.4s ease-in;
+    }
+
+    .album:hover .album__overlay {
+        opacity: .75;
+    }
+
+    .listen__logo {
+        height: auto;
+        width: 400px;
+    }
+}
+
+// media queries
+
+@media(max-width: 660px) {
+    .landing__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .landing__content {
+            margin: 0 auto;
+            min-width: 350px;
+
+            .landing__h1 {
+                font-size: 3rem;
+            }
+
+            .landing__p {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    // 
+    // 
+    // MUSIC SECTION
+    #music {
+        display: flex;
+        flex-direction: column;
+
+        .music__heading {
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        .music__grid {
+            width: 100vw;
+            flex-direction: column;
+            justify-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        .album {
+            display: relative;
+            width: 62%;
+            margin: 0 auto;
+        }
+
+        .album__overlay {
+            width: 100%;
+            height: 99%;
+            position: absolute;
+        }
+
+        .album__cover {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .nav-left {
+        width: 100%;
+    }
+    
+    .nav-right {
+        display: none;
+    }
+}
