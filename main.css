@@ -105,6 +105,8 @@ nav a {
 }
 
 #music {
+  background-color: #1f1f1f;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,6 +133,8 @@ nav a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -140,33 +144,42 @@ nav a {
   position: relative;
 }
 
-#music .music__right {
-  margin-top: 2rem;
+#music .album__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#music .album__heading {
+  margin: 0;
+  padding: 0;
 }
 
 #music .album {
   position: relative;
 }
 
-#music .album__overlay {
-  background-color: #2187B4;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
+#music .album__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
   width: 100%;
-  height: 99%;
-  -webkit-transition: opacity 0.4s ease-in;
-  transition: opacity 0.4s ease-in;
 }
 
-#music .album:hover .album__overlay {
-  opacity: .75;
-}
-
-#music .listen__logo {
-  height: auto;
-  width: 400px;
+#music a {
+  font-size: 1.85rem;
+  color: #fff;
 }
 
 @media (max-width: 660px) {

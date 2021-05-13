@@ -83,6 +83,8 @@ nav {
 
 
 #music {
+    background-color: #1f1f1f;
+    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,6 +99,7 @@ nav {
 
     .music__grid {
         display: flex;
+        flex-wrap: wrap;
         gap: 10px;
     }
 
@@ -106,32 +109,31 @@ nav {
         position: relative;
     }
 
-    .music__right {
-        margin-top: 2rem;
+    .album__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .album__heading {
+        margin: 0;
+        padding: 0;
     }
 
     .album {
         position: relative;
     }
 
-    .album__overlay {
-        background-color: #2187B4;
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0;
+    .album__links {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
         width: 100%;
-        height: 99%;
-        transition: opacity 0.4s ease-in;
     }
 
-    .album:hover .album__overlay {
-        opacity: .75;
-    }
-
-    .listen__logo {
-        height: auto;
-        width: 400px;
+    a {
+        font-size: 1.85rem;
+        color: #fff;
     }
 }
 
