@@ -45,6 +45,14 @@ video {
   color: #fff;
 }
 
+.landing__header .landing__h1 {
+  font-size: 4rem;
+}
+
+.landing__header .landing__p {
+  font-size: 2rem;
+}
+
 .landing__header .landing__content {
   border: 5px solid #2187B4;
   margin-right: 10rem;
@@ -69,6 +77,8 @@ video {
   color: #fff;
   padding: .55rem 4rem;
   background-color: #2187B4;
+  font-size: 1.55rem;
+  text-transform: uppercase;
 }
 
 nav {
@@ -180,6 +190,31 @@ nav a {
 #music a {
   font-size: 1.85rem;
   color: #fff;
+}
+
+#videos {
+  background-color: #1f1f1f;
+}
+
+.video-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.video-info {
+  color: #fff;
+  background-color: #2187B4;
+  margin: -60px;
+  z-index: 8;
+  padding: 2rem;
 }
 
 @media (max-width: 660px) {
