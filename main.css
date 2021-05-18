@@ -209,6 +209,11 @@ nav a {
   position: relative;
 }
 
+.video-container .video-gif {
+  height: auto;
+  max-width: 50%;
+}
+
 .video-info {
   color: #fff;
   background-color: #2187B4;

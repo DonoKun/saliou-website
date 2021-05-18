@@ -158,6 +158,12 @@ nav {
     justify-content: center;
     align-items: center;
     position:relative;
+
+    .video-gif {
+        height: auto;
+        max-width: 50%;
+        // min-width: 50%;
+    }
 }
 
 .video-info {
