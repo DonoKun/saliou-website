@@ -179,8 +179,14 @@ nav {
     background-color: #2187B4;
     margin: -60px;
     z-index: 8;
-    padding: 1rem;
-    min-width: 15rem;
+    height: 10vh;
+    min-width: 18rem;
+    display: flex;
+    flex-direction: column;
+
+    .video-info-container {
+        margin-left: 1rem;
+    }
 
     h2 {
         font-size: 2rem;
