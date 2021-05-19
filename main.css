@@ -13,7 +13,7 @@ body {
 video {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   position: absolute;
   top: 0;
@@ -24,7 +24,7 @@ video {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.65);
 }
@@ -84,7 +84,7 @@ video {
 nav {
   position: absolute;
   bottom: 0;
-  width: 100vw;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,7 +92,7 @@ nav {
       justify-content: space-around;
   background-color: rgba(0, 0, 0, 0.65);
   color: #fff;
-  height: 4vh;
+  height: 5vh;
 }
 
 nav ul {
