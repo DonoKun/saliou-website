@@ -4,6 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -145,7 +146,9 @@ nav a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #music .music__grid img {
@@ -174,6 +177,7 @@ nav a {
 
 #music .album {
   position: relative;
+  margin: 1rem;
 }
 
 #music .album__links {
@@ -183,13 +187,13 @@ nav a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 15px;
   width: 100%;
 }
 
 #music a {
   font-size: 1.85rem;
   color: #fff;
+  margin: .45rem;
 }
 
 #videos {
@@ -207,11 +211,18 @@ nav a {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  margin: 2rem 0;
 }
 
 .video-container .video-gif {
   height: auto;
-  max-width: 50%;
+  max-width: 40%;
+}
+
+.video-heading {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .video-info {
@@ -219,7 +230,17 @@ nav a {
   background-color: #2187B4;
   margin: -60px;
   z-index: 8;
-  padding: 2rem;
+  padding: 1rem;
+  min-width: 15rem;
+}
+
+.video-info h2 {
+  font-size: 2rem;
+}
+
+.video-info a {
+  color: #fff;
+  text-decoration: none;
 }
 
 @media (max-width: 660px) {
