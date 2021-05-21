@@ -6,6 +6,8 @@
     scroll-behavior: smooth;
 }
 
+$blue: #2187B4;
+
 body {
     font-family: 'PT Sans', sans-serif;
 }
@@ -46,11 +48,12 @@ body {
     }
 
     .landing__content {
-        border: 5px solid #2187B4;
+        border: 5px solid $blue;
         margin-right: 10rem;
         min-width: 500px;
         min-height: 30vh;
         display: flex;
+        padding: 2rem;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -58,11 +61,35 @@ body {
         .landing__btn {
             text-decoration: none;
             color: #fff;
-            padding: .55rem 4rem;
-            background-color: #2187B4;
+            padding: 1rem 4rem;
+            margin-top: 1rem;
+            background-color: transparent;
+            border: 2px solid $blue;
             font-size: 1.55rem;
             text-transform: uppercase;
+            transition: background-color 0.4s ease-in;
+            position: relative;
+            z-index: 1;
         }
+
+        .landing__btn::before {
+            content: '';
+            background-color: $blue;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            transform-origin: left;
+            transform: scaleX(0);
+            transition: transform 0.4s ease-in;
+        }
+
+       .landing__btn:hover::before,
+       .landing__btn:focus::before {
+           transform: scaleX(1);
+       }
     }
   }
 
@@ -88,6 +115,11 @@ nav {
           color: #fff;
           font-size: 1.45rem;
           text-decoration: none;
+          transition: 0.3s ease-in;
+      }
+
+      a:hover {
+          color: $blue;
       }
   }
 
@@ -103,8 +135,12 @@ nav {
     width: 100vw;
     padding: 10rem 0;
 
-    h2 {
+    .music__heading {
         font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.25rem;
         margin-bottom: 4rem;
     }
 
@@ -148,6 +184,11 @@ nav {
         font-size: 2.25rem;
         color: #fff;
         margin: .45rem;
+        transition: 0.3s ease-in;
+    }
+
+    a:hover {
+        color: $blue;
     }
 }
 
