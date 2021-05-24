@@ -20,7 +20,7 @@
 
 <body>
     <section class="landing">
-        <video src="assets/sal-video.mp4" muted loop autoplay></video>
+        <video class="landing__video" src="assets/sal-video.mp4" muted loop autoplay></video>
         <div class="landing__overlay"></div>
         <header class="landing__header">
             <div class="landing__content">
@@ -87,7 +87,9 @@
         <div class="videos-overlay"></div>
         <h2 class="video-heading">Videos</h2>
         <div class="video-container">
-            <img src="assets/sal-video.gif" class="video-gif" alt="Blunt Video">
+            <video class="video__section--video" autoplay loop muted playsinline>
+                <source src="assets/blunt.mp4" type="video/mp4">
+            </video>
             <div class="video-info">
                 <div class="video-info-container">
                     <h2>Blunt (Official Video)</h2>
@@ -96,24 +98,28 @@
             </div>
         </div>
         <div class="video-container">
-            <img src="assets/law-of-attraction-clip.gif" class="video-gif" alt="law of attraction video">
+            <video class="video__section--video" autoplay loop muted playsinline>
+                <source src="assets/loa.mp4" type="video/mp4">
+            </video>
             <div class="video-info">
                 <div class="video-info-container">
-                    <h2>Law of Attraction</h2>
-                    <a href="https://www.youtube.com/watch?v=bi4KEKZLOy0">Watch Now</a>
+                    <h2>Pouring Rays</h2>
+                    <a href="https://www.youtube.com/watch?v=8q2CMCbJuJU">Watch Now</a>
                 </div>
             </div>
         </div>
         <div class="video-container">
-            <img src="assets/sal-live.gif" class="video-gif" alt="saliou live pouring rays">
+            <video class="video__section--video" autoplay loop muted playsinline>
+                <source src="assets/live.mp4" type="video/mp4">
+            </video>
             <div class="video-info">
                 <div class="video-info-container">
-                    <h2>Pouring Rays Live</h2>
-                    <a href="https://www.youtube.com/watch?v=NdxJUfoyF7E">Watch Now</a>
+                    <h2>Pouring Rays</h2>
+                    <a href="https://www.youtube.com/watch?v=8q2CMCbJuJU">Watch Now</a>
                 </div>
             </div>
         </div>
-        <div class="video-section-mobile">
+        <!-- <div class="video-section-mobile">
             <div class="video-container-mobile">
                 <iframe  src="https://www.youtube.com/embed/8q2CMCbJuJU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
@@ -123,7 +129,7 @@
             <div class="video-container-mobile">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/NdxJUfoyF7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-        </div>
+        </div> -->
     </section>
     <footer>
         <p>&copy; The Third Pixel and DonoKun 2021</p>
