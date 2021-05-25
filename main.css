@@ -220,6 +220,13 @@ nav a:hover {
 #music .album {
   position: relative;
   margin: 1rem;
+  opacity: 0;
+  -webkit-transition: opacity 0.69s ease-in;
+  transition: opacity 0.69s ease-in;
+}
+
+#music .fade-in {
+  opacity: 1;
 }
 
 #music .album__links {
@@ -273,6 +280,17 @@ nav a:hover {
           align-items: center;
   position: relative;
   margin: 2rem 0;
+  -webkit-transition: -webkit-transform 1100ms ease-in;
+  transition: -webkit-transform 1100ms ease-in;
+  transition: transform 1100ms ease-in;
+  transition: transform 1100ms ease-in, -webkit-transform 1100ms ease-in;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.slide {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .video__section--video {

@@ -171,7 +171,14 @@ nav {
     .album {
         position: relative;
         margin: 1rem;
+        opacity: 0;
+        transition: opacity 0.69s ease-in;
     }
+
+    .fade-in {
+        opacity: 1;
+    }
+    
 
     .album__links {
         display: flex;
@@ -216,6 +223,13 @@ nav {
     align-items: center;
     position:relative;
     margin: 2rem 0;
+    transition: transform 1100ms ease-in;
+    transform: translateX(100%);
+}
+
+
+.slide {
+    transform: translateX(0);
 }
 
 .video__section--video {
