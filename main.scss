@@ -256,9 +256,11 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: none;
 
     .video-info-container {
         margin-left: 1rem;
+        overflow: hidden;
     }
 
     h2 {
@@ -384,6 +386,7 @@ footer {
     .video-info {
         position: absolute;
         bottom: 10rem;
+        right: 10rem;
     }
 }
 
