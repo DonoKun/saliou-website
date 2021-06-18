@@ -349,7 +349,6 @@ nav a:hover {
   bottom: -3px;
   position: absolute;
   width: 100%;
-  height: 5px;
   background-color: #2187B4;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
@@ -362,6 +361,7 @@ nav a:hover {
 .video-info a:hover::before, .video-info a:focus::before {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  height: 5px;
 }
 
 footer {

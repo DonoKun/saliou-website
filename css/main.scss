@@ -279,7 +279,6 @@ nav {
             bottom: -3px;
             position: absolute;
             width: 100%;
-            height: 5px;
             background-color:$blue;
             transform: translateX(-100%);
             transition: transform 0.4s ease;
@@ -288,6 +287,7 @@ nav {
         &:hover::before,
         &:focus::before {
             transform: translateX(0);
+            height: 5px;
         }
     }
 }
